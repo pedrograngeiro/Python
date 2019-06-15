@@ -1,12 +1,12 @@
 ultimo = 10
 fila = list(range(1,ultimo+1))
 count = int(0)
+operacao = raw_input("Digite o comando: ")
 while True:
     print("\n Existem % clientes na fila" % len(fila))
     print("Fila atual: " , fila)
     print("Digite F para adicionar um cliente ao fim da lista,")
     print("Ou A para realizar o atendimento um cliente (S para sair)")
-    operacao = "AAAAAFFS"
     if operacao [count: count+1] == "A":
         if(len(fila))>0:
             atendido = fila.pop(0)
@@ -21,5 +21,3 @@ while True:
     else:
         print("Operacao invalida! Digite apenas F, A e S!")
     count = count + 1
-    
-    
